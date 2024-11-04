@@ -2,4 +2,4 @@
 
 ## Editeur de CSS Visuel
 
-## Fait par Matthieu Bamert, Romain Denis, Charles-Henri Moser
+## Fait par Charles-Henri Moser, Matthieu Bamert,  Romain Denis.
