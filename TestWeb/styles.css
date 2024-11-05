@@ -40,8 +40,17 @@ body.dark-mode {
     padding: 10px;
 }
 
-.input-group {
+#text-content{
+    width: 270px;
     margin-bottom: 10px;
+    height: 20px;
+    padding: 5px;
+}
+
+.input-group {
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
 label {
@@ -50,7 +59,7 @@ label {
     font-weight: bold;
 }
 
-input, select {
+select {
     width: calc(100% - 20px);
     padding: 8px;
     margin-bottom: 10px;
