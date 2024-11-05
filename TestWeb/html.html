@@ -17,15 +17,48 @@
             </div>
             <div class="input-group">
                 <label for="background-color">Couleur de fond : </label>
-                <input type="text" id="background-color" placeholder="Ex: #f0f0f0">
+                <select id="background-color">
+                    <option value="">Sélectionner une couleur</option>
+                    <option value="#ffffff">Blanc</option>
+                    <option value="#f0f0f0">Gris clair</option>
+                    <option value="#000000">Noir</option>
+                    <option value="#ff0000">Rouge</option>
+                    <option value="#00ff00">Vert</option>
+                    <option value="#0000ff">Bleu</option>
+                </select>
             </div>
             <div class="input-group">
                 <label for="text-color">Couleur du texte : </label>
-                <input type="text" id="text-color" placeholder="Ex: #333333">
+                <select id="text-color">
+                    <option value="">Sélectionner une couleur</option>
+                    <option value="#333333">Noir</option>
+                    <option value="#ffffff">Blanc</option>
+                    <option value="#ff0000">Rouge</option>
+                    <option value="#00ff00">Vert</option>
+                    <option value="#0000ff">Bleu</option>
+                </select>
             </div>
             <div class="input-group">
                 <label for="font-size">Taille du texte : </label>
-                <input type="text" id="font-size" placeholder="Ex: 16px">
+                <select id="font-size">
+                    <option value="">Sélectionner une taille</option>
+                    <option value="14px">14px</option>
+                    <option value="16px">16px</option>
+                    <option value="18px">18px</option>
+                    <option value="20px">20px</option>
+                    <option value="24px">24px</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="font-family">Police du texte : </label>
+                <select id="font-family">
+                    <option value="">Sélectionner une police</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
             </div>
             <button id="apply-styles">Appliquer les Styles</button>
         </div>

@@ -24,7 +24,6 @@ body.dark-mode {
     --container-text-color: #ffffff;
 }
 
-
 .container {
     background-color: var(--container-bg-color);
     color: var(--container-text-color);
@@ -51,7 +50,7 @@ label {
     font-weight: bold;
 }
 
-input {
+input, select {
     width: calc(100% - 20px);
     padding: 8px;
     margin-bottom: 10px;
