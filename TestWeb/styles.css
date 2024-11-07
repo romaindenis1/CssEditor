@@ -40,29 +40,20 @@ body.dark-mode {
     padding: 10px;
 }
 
-#text-content{
-    width: 270px;
+#text-content, select {
+    width: calc(100% - 20px);
+    padding: 8px;
     margin-bottom: 10px;
-    height: 20px;
-    padding: 5px;
 }
 
 .input-group {
-    width: 300px;
     margin-bottom: 10px;
-    padding: 5px;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-}
-
-select {
-    width: calc(100% - 20px);
-    padding: 8px;
-    margin-bottom: 10px;
 }
 
 button {
@@ -87,6 +78,7 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
+    word-wrap: break-word;
 }
 
 .theme-switch {
