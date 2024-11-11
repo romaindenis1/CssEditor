@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --container-bg-color: #ffffff;
+    --container-text-color: #333333;
+}
+
+body.dark-mode {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --container-bg-color: #444444;
+    --container-text-color: #ffffff;
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    color: var(--container-text-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 800px;
+    text-align: center;
+}
+
+.editor, .preview {
+    flex: 1;
+    padding: 10px;
+}
+
+#text-content, select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+}
+
+button {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.output {
+    margin-top: 20px;
+}
+
+#output-text {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.theme-switch {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fleche{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+} 
+
+
