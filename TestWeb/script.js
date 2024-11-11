@@ -1,4 +1,3 @@
-// script.js
 document.getElementById('apply-styles').addEventListener('click', function() {
     let textContent = document.getElementById('text-content').value;
     let backgroundColor = document.getElementById('background-color').value;
@@ -12,6 +11,9 @@ document.getElementById('apply-styles').addEventListener('click', function() {
     let isItalic = document.getElementById('italic').checked;
     let isUnderline = document.getElementById('underline').checked;
     let isLineThrough = document.getElementById('line-through').checked;
+
+    
+    let booTheme = true;
 
     let cssText = '';
 
@@ -39,6 +41,12 @@ document.getElementById('apply-styles').addEventListener('click', function() {
         cssText += `font-family: ${fontFamily};\n`;
     }
 
+    let justifyOption = document.querySelector('input[name="justify-option"]:checked'); // Get selected justify option
+    if (justifyOption) {
+        outputText.style.textAlign = justifyOption.value;
+        cssText += `text-align: ${justifyOption.value};\n`;
+    }
+
     outputText.style.fontWeight = isBold ? 'bold' : 'normal';
     cssText += isBold ? 'font-weight: bold;\n' : 'font-weight: normal;\n';
 
@@ -58,10 +66,17 @@ document.getElementById('apply-styles').addEventListener('click', function() {
         outputText.style.textDecoration = 'none';
         cssText += 'text-decoration: none;\n';
     }
-
     cssCode.textContent = `#output-text {\n${cssText}}`;
 });
 
-document.getElementById('theme-toggle').addEventListener('change', function() {
+document.getElementById('theme-toggle').addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
+    
+    const themeToggle = document.getElementById("theme-toggle");
+    if (themeToggle.getAttribute("src") === "theme-dark.svg") {
+        themeToggle.setAttribute("src", "theme-light.svg");
+    } else {
+        themeToggle.setAttribute("src", "theme-dark.svg");
+    }
 });
+
