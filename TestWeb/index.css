@@ -65,27 +65,28 @@ label {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding-bottom: 20px;
 }
 
 .checkbox-group {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 10px;
+    grid-template-columns: auto 1fr; 
+    gap: 10px 90px;
 }
 
-.checkbox-group div {
+.checkbox-item {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    align-items: center; 
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 10px; 
 }
 
 .checkbox-group label {
-    margin: 0;
+    margin: 0; 
 }
 
-input[type="checkbox"] {
-    margin: 0;
-}
 button {
     background-color: #007BFF;
     border: none;
