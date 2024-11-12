@@ -1,109 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personnalisation de Texte</title>
-    <link rel="stylesheet" href="./style/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="editor">
-            <h1>Personnalisation de Texte</h1>
-            <p>Utilise les champs ci-dessous pour modifier le texte à droite.</p>
-            <div class="input-group">
-                <label for="text-content">Texte :</label>
-                <input type="text" id="text-content" placeholder="Votre texte ici">
-            </div>
-            <div class="input-group">
-                <label for="background-color">Couleur de fond :</label>
-                <select id="background-color">
-                    <option value="" disabled selected>Choisir une couleur</option>
-                    <option value="white">Blanc</option>
-                    <option value="lightgray">Gris clair</option>
-                    <option value="gray">Gris</option>
-                    <option value="black">Noir</option>
-                    <option value="red">Rouge</option>
-                    <option value="green">Vert</option>
-                    <option value="blue">Bleu</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <label for="text-color">Couleur du texte :</label>
-                <select id="text-color">
-                    <option value="" disabled selected>Choisir une couleur</option>
-                    <option value="black">Noir</option>
-                    <option value="white">Blanc</option>
-                    <option value="red">Rouge</option>
-                    <option value="green">Vert</option>
-                    <option value="blue">Bleu</option>
-                    <option value="yellow">Jaune</option>
-                    <option value="purple">Violet</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <label for="font-size">Taille du texte :</label>
-                <select id="font-size">
-                    <option value="" disabled selected>Choisir une taille</option>
-                    <option value="12px">12px</option>
-                    <option value="14px">14px</option>
-                    <option value="16px">16px</option>
-                    <option value="18px">18px</option>
-                    <option value="20px">20px</option>
-                    <option value="24px">24px</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <label for="font-family">Police du texte :</label>
-                <select id="font-family">
-                    <option value="" disabled selected>Choisir une police</option>
-                    <option value="Arial">Arial</option>
-                    <option value="Georgia">Georgia</option>
-                    <option value="Times New Roman">Times New Roman</option>
-                    <option value="Verdana">Verdana</option>
-                    <option value="Courier New">Courier New</option>
-                </select>
-            </div>
-            <div class="input-group-checkbox">
-                <label for="text-decoration">Options de texte :</label>
-                <div class="checkbox-group">
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="bold">
-                        <label for="bold">Gras</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="italic">
-                        <label for="italic">Italique</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="underline">
-                        <label for="underline">Souligné</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="line-through">
-                        <label for="line-through">Barré</label>
-                    </div>
-                </div>
-            </div>
-
-            <button id="apply-styles">Appliquer les Styles</button>
+      <div class="editor">
+        <h1>Personnalisation de Texte</h1>
+        <p>Utilise les champs ci-dessous pour modifier le texte à droite.</p>
+        <div class="input-group">
+          <label for="background-color">Couleur de fond :</label>
+          <select id="background-color">
+            <option value="" disabled selected>Choisir une couleur</option>
+            <option value="white">Blanc</option>
+            <option value="lightgray">Gris clair</option>
+            <option value="gray">Gris</option>
+            <option value="black">Noir</option>
+            <option value="red">Rouge</option>
+            <option value="green">Vert</option>
+            <option value="blue">Bleu</option>
+          </select>
         </div>
-        <div class="preview">
-            <h1>Aperçu en Direct</h1>
-            <p id="output-text">Texte à personnaliser</p>
-            <h1>Code CSS</h1>
-            <pre id="css-code">/* CSS généré automatiquement */</pre>
+        <div class="input-group">
+          <label for="text-color">Couleur du texte :</label>
+          <select id="text-color">
+            <option value="" disabled selected>Choisir une couleur</option>
+            <option value="black">Noir</option>
+            <option value="white">Blanc</option>
+            <option value="red">Rouge</option>
+            <option value="green">Vert</option>
+            <option value="blue">Bleu</option>
+            <option value="yellow">Jaune</option>
+            <option value="purple">Violet</option>
+          </select>
         </div>
-        <div class="theme-switch">
-            <input type="image" id="theme-toggle" src=".theme-dark.svg" width="50px">
+        <div class="input-group">
+          <label for="font-size">Taille du texte :</label>
+          <select id="font-size">
+            <option value="" disabled selected>Choisir une taille</option>
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+            <option value="18px">18px</option>
+            <option value="20px">20px</option>
+            <option value="24px">24px</option>
+          </select>
         </div>
-        <a href="flexbox.html">
-
-            <img class="fleche" src="arrow.webp" alt="fleche">
-        </a>  
+        <div class="input-group">
+          <label for="font-family">Police du texte :</label>
+          <select id="font-family">
+            <option value="" disabled selected>Choisir une police</option>
+            <option value="Arial">Arial</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Courier New">Courier New</option>
+          </select>
+        </div>
+        <div class="input-group-checkbox">
+          <label for="text-decoration">Options de texte :</label>
+          <div class="checkbox-group">
+            <div class="checkbox-item">
+              <input type="checkbox" id="bold" />
+              <label for="bold">Gras</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="italic" />
+              <label for="italic">Italique</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="underline" />
+              <label for="underline">Souligné</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="line-through" />
+              <label for="line-through">Barré</label>
+            </div>
+          </div>
+        </div>
+        <button id="apply-styles">Appliquer les Styles</button>
+      </div>
+      <div class="preview">
+        <h1>Aperçu en Direct</h1>
+        <p
+          contenteditable="true"
+          id="output-text"
+          class="placeholder"
+          data-placeholder="Texte à personnaliser"
+        ></p>
+        <h1>Code CSS</h1>
+        <pre id="css-code">/* CSS généré automatiquement */</pre>
+      </div>
+      <div class="theme-switch">
+        <input
+          type="image"
+          id="theme-toggle"
+          src="theme-dark.svg"
+          width="50px"
+        />
+      </div>
+      <a href="flexbox.html">
+        <img class="fleche" src="arrow.webp" alt="fleche" />
+      </a>
     </div>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
-
-

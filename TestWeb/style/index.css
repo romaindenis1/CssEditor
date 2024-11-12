@@ -1,133 +1,133 @@
 body {
-    display: flex;
-    font-family: Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 :root {
-    --background-color: #ffffff;
-    --text-color: #333333;
-    --container-bg-color: #ffffff;
-    --container-text-color: #333333;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --container-bg-color: #ffffff;
+  --container-text-color: #333333;
 }
 
 body.dark-mode {
-    --background-color: #333333;
-    --text-color: #ffffff;
-    --container-bg-color: #444444;
-    --container-text-color: #ffffff;
+  --background-color: #333333;
+  --text-color: #ffffff;
+  --container-bg-color: #444444;
+  --container-text-color: #ffffff;
 }
 
 .container {
-    background-color: var(--container-bg-color);
-    color: var(--container-text-color);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    width: 800px;
-    text-align: center;
+  background-color: var(--container-bg-color);
+  color: var(--container-text-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 800px;
+  text-align: center;
 }
 
-.editor, .preview {
-    flex: 1;
-    padding: 10px;
+.editor,
+.preview {
+  flex: 1;
+  padding: 10px;
 }
 
-#text-content, select {
-    width: calc(100% - 20px);
-    padding: 8px;
-    margin-bottom: 10px;
+#text-content,
+select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
-#text-content{
-    width: 88.5%;
+#text-content {
+  width: 88.5%;
 }
 
 .input-group {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    display: flex;
-    justify-content: left;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
 }
+
 .input-group-checkbox {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
 }
 
 .checkbox-group {
-    display: grid;
-    grid-template-columns: auto 1fr; 
-    gap: 10px 90px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 90px;
 }
 
 .checkbox-item {
-    display: flex;
-    align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .checkbox-item input[type="checkbox"] {
-    margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .checkbox-group label {
-    margin: 0; 
+  margin: 0;
 }
 
 button {
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
 }
-.theme-switch{
-    padding-right: 15px;
-}
+
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .output {
-    margin-top: 20px;
+  margin-top: 20px;
 }
-#checkbox{
-    margin: 150px;
-    float:top;
-    display: flex;
-    flex-direction: column;
-}
+
 #output-text {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    word-wrap: break-word;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
 }
 
 .theme-switch {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
-.fleche{
-    width: 20px;
-    height: 20px;
-margin-top: 700px;
-} 
+.fleche {
+  width: 20px;
+  height: 20px;
+  margin-top: 700px;
+}
 
-
+.placeholder:empty:before {
+  content: "Texte à personnaliser";
+  color: gray;
+  pointer-events: none;
+}
