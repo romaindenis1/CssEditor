@@ -125,11 +125,9 @@ button:hover {
 }
 
 .fleche{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
+margin-top: 700px;
 } 
 
 
