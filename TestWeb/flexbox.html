@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personnalisation de Texte</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Personnalisation des Boîtes</title>
+    <link rel="stylesheet" href="./style/flex.css">
 </head>
 <body>
     <div class="theme-switch">
-        <input type="image" id="theme-toggle" src="theme-dark.svg" width="50px">
+        <input type="image" id="theme-toggle" src="./image/theme-dark.svg" width="50px">
     </div>
     <div class="container">
         <div class="editor">
-            <h1>Personnalisation de Texte</h1>
-            <p>Utilise les champs ci-dessous pour modifier les boites</p>
+            <h1>Personnalisation des Boîtes</h1>
+            <p>Utilise les champs ci-dessous pour modifier les propriétés du layout</p>
+            
             <div class="input-group">
-                <label for="justify-option">Justify</label>
+                <label for="justify-option">Justify Content</label>
                 <select id="justify-option">
                     <option value="" disabled selected>Choisir un alignement</option>
                     <option value="flex-start">Start</option>
@@ -26,15 +27,57 @@
                     <option value="space-evenly">Space Evenly</option>
                 </select>
             </div>
+
+            <div class="input-group">
+                <label for="align-option">Align Items</label>
+                <select id="align-option">
+                    <option value="" disabled selected>Choisir un alignement vertical</option>
+                    <option value="flex-start">Start</option>
+                    <option value="flex-end">End</option>
+                    <option value="center">Center</option>
+                    <option value="stretch">Stretch</option>
+                    <option value="baseline">Baseline</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="flex-direction">Flex Direction</label>
+                <select id="flex-direction">
+                    <option value="" disabled selected>Choisir une direction</option>
+                    <option value="row">Row</option>
+                    <option value="column">Column</option>
+                    <option value="row-reverse">Row Reverse</option>
+                    <option value="column-reverse">Column Reverse</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="flex-wrap">Flex Wrap</label>
+                <select id="flex-wrap">
+                    <option value="" disabled selected>Choisir wrap</option>
+                    <option value="nowrap">No Wrap</option>
+                    <option value="wrap">Wrap</option>
+                    <option value="wrap-reverse">Wrap Reverse</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="gap">Gap</label>
+                <input type="number" id="gap" placeholder="0" min="0">
+            </div>
+
             <button id="apply-styles">Appliquer</button>
         </div>
+
         <div class="preview">
             <h1>Aperçu en Direct</h1>
-            <p id="output-text">Texte à personnaliser</p>
+            <div class="box box1">Boîte 1</div>
+            <div class="box box2">Boîte 2</div>
+            <div class="box box3">Boîte 3</div>
             <h2>Code CSS</h2>
             <pre id="css-code">/* CSS généré automatiquement */</pre>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./js/flex.js"></script>
 </body>
 </html>
