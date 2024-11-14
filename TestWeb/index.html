@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="./style/index.css" />
   </head>
   <body>
+    
     <div class="container">
+      <div class="preview">
+        <h1>Aperçu en Direct</h1>
+        <p
+          contenteditable="true"
+          id="output-text"
+          class="placeholder"
+          data-placeholder="Texte à personnaliser"
+        ></p>
+        <h1>Code CSS</h1>
+        <pre id="css-code">/* CSS généré automatiquement */</pre>
+      </div>
       <div class="editor">
         <h1>Personnalisation de Texte</h1>
         <p>Utilise les champs ci-dessous pour modifier le texte à droite.</p>
@@ -83,17 +95,7 @@
         </div>
         <button id="apply-styles">Appliquer les Styles</button>
       </div>
-      <div class="preview">
-        <h1>Aperçu en Direct</h1>
-        <p
-          contenteditable="true"
-          id="output-text"
-          class="placeholder"
-          data-placeholder="Texte à personnaliser"
-        ></p>
-        <h1>Code CSS</h1>
-        <pre id="css-code">/* CSS généré automatiquement */</pre>
-      </div>
+      
       <div class="theme-switch">
         <input
           type="image"

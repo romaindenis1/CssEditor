@@ -31,13 +31,14 @@ body.dark-mode {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   width: 800px;
-  text-align: center;
+
 }
 
 .editor,
 .preview {
-  flex: 1;
+
   padding: 10px;
+  
 }
 
 #text-content,
@@ -137,4 +138,8 @@ button:hover {
   content: "Texte à personnaliser";
   color: gray;
   pointer-events: none;
+}
+
+H1{
+  margin: 0px;
 }

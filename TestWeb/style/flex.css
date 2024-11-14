@@ -39,7 +39,7 @@ body.dark-mode {
     gap: 20px;
     width: 90%;
     max-width: 1000px;
-    text-align: center;
+
 }
 
 .editor, .preview {
