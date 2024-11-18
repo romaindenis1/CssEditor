@@ -39,7 +39,6 @@ body.dark-mode {
     gap: 20px;
     width: 90%;
     max-width: 1000px;
-
 }
 
 .editor, .preview {
@@ -114,6 +113,17 @@ pre {
     background-color: #2ecc71;
 }
 
+.box-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); /* Met 2 boîtes par ligne */
+    grid-template-rows: repeat(2, 1fr);    /* Met 2 lignes de boîtes */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center;    /* Centre le contenu verticalement */
+    max-width: 220px;       /* Assure que les boîtes ne débordent pas */
+    margin: 0 auto;         /* Centre le conteneur de la grille */
+}
+
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -130,8 +140,9 @@ pre {
         width: 100%;
     }
 }
-.fleche{
+
+.fleche {
     width: 20px;
     height: 20px;
-margin-top: 700px;
-} 
+    margin-top: 700px;
+}
