@@ -21,7 +21,6 @@ body.dark-mode {
   --text-color: #ffffff;
   --container-bg-color: #444444;
   --container-text-color: #ffffff;
-  
 }
 
 .container {
@@ -31,14 +30,11 @@ body.dark-mode {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   width: 800px;
-
 }
 
 .editor,
 .preview {
-
   padding: 10px;
-  
 }
 
 #text-content,
@@ -93,11 +89,12 @@ label {
 }
 
 button {
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  color: white;
+  width: 95%;
   padding: 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
   cursor: pointer;
 }
 
@@ -128,11 +125,10 @@ button:hover {
   margin-top: 700px;
 }
 .fleche.dark-mode {
-    width: 100px;
-    height: 20px;
-    margin-top: 700px;
-  }
-  
+  width: 100px;
+  height: 20px;
+  margin-top: 700px;
+}
 
 .placeholder:empty:before {
   content: "Texte à personnaliser";
@@ -140,6 +136,6 @@ button:hover {
   pointer-events: none;
 }
 
-H1{
+H1 {
   margin: 0px;
 }
