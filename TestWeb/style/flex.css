@@ -14,8 +14,12 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Matthieu didn't want to use a global.css i hate him */
+/* I was going to work on this because i'm bored in class but */
+/* I can't be asked to remake the css */
+/* Maybe in another life */
 :root {
-  --background-color: #ffffff;
+  --background-color: #7C7A7A;
   --text-color: #333333;
   --container-bg-color: #ffffff;
   --container-text-color: #333333;

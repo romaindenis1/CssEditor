@@ -7,10 +7,11 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  border: 1px black solid;
 }
 
 :root {
-  --background-color: #ffffff;
+  --background-color: #7C7A7A;
   --text-color: #333333;
   --container-bg-color: #ffffff;
   --container-text-color: #333333;
